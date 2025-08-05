@@ -10,5 +10,3 @@ LIMIT 1  OFFSET 1
 
 END AS SecondHighestSalary
 FROM Employee;
-
--- Testing 
