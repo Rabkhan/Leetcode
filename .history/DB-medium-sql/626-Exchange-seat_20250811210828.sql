@@ -27,15 +27,5 @@ FROM swapped s
 JOIN numbered n ON n.rn = s.swap_rn
 ORDER BY n.id;
 
--- Time took to solve 40 mins
 
--- Another solution
 
-SELECT
-    CASE 
-    WHEN id%2= 1 AND id= (select Count(*) from seat) THEN id -- count gives last row no. and if odd
-    WHEN id%2= 0 THEN id-1 
-    else id+1 end as id,
-    student
-From seat
-Order by id;
