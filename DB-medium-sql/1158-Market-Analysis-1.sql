@@ -1,4 +1,20 @@
 
+/*
+After solving this question i feel so stupid; I AM STUPID (IN CHARLES L.VOICE).
+
+SELECT 
+    user_id AS buyer_id, 
+    join_date,
+    COUNT(o.order_id) AS orders_in_2019 
+
+FROM Users U
+LEFT JOIN Orders O ON u.user_id = o.buyer_id 
+AND EXTRACT (YEAR FROM order_date::Date)= 2019
+GROUP BY U.user_id
+ORDER BY U.user_id
+*/
+
+
 /* 
 --------------------------------
 
