@@ -12,7 +12,8 @@ GROUP BY
 ORDER BY 
   u.user_id
 
---- Above worked grouping join_date was annoying. 
+
+--- Above worked grouping join_date was annoying/ Re-attampt this in future. 
 
 
 /*
@@ -61,4 +62,4 @@ GROUP BY OB.buyer_id, UM.JD, OB.total_item_bought
 ORDER BY OB.buyer_id
 */
 
---- Testing git -- not working??? 
+-- Git Test passed.
